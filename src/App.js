@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import ConsoleButton from './ConsoleButton';
+import TextInput from './TextInput';
+import ClickCounter from './ClickCounter';
 
 function App() {
+  const enProp = 'Värde från huvudkomponenten';
+  const enProp2 = 'Skriv något i textfälten';
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Webbutveckling med React - Laboration 1</h1>
+      <hr></hr>
+      <ConsoleButton prop1={enProp} />
+      <TextInput prop2={enProp2} />
+      <ClickCounter/>
     </div>
   );
 }
